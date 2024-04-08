@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADSTONE</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="imagenes/logo.png" type="image/x-icon" />
+  </head>
+  
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo"></a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/index.html" class="navbar__links" id="home-page">Volver</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#conocenos" class="navbar__links" id="about-page">Como</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#Testimonios" class="navbar__links" id="services-page">Testimonios</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#Comentarios" class="navbar__links" id="comments-page">Comentarios</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#Terminos" class="navbar__links" id="terms-page">Terminos</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="https://wa.me/526275170605?text=¡Hola!%20Me%20interesa%20saber%20más%20de%20Adstone" class="button" id="signup">Contactanos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading"><span>Conocenos</span></h1>
+        <p class="hero__description">La publicidad que tu negocio necesita</p>
+      </div>
+    </div>
+
+    <!-- Conocenos -->
+    <div class="main" id="conocenos">
+      <div class="main__container">
+        <div class="main__content">
+          <h2>¿Cómo funciona?</h2>
+          <p>Un servicio de publicidad en línea permite a las empresas promocionar sus productos o servicios a través de Internet, utilizando diversas plataformas como redes sociales, motores de búsqueda y sitios web. Ofrece soluciones empresariales mediante la segmentación de audiencia, análisis de datos y estrategias de marketing digital para alcanzar objetivos específicos, como aumentar el conocimiento de la marca, generar clientes potenciales o impulsar las ventas.</p>
+          <button class="main__btn"><a href="https://wa.me/526275170605?text=¡Hola!%20Me%20interesa%20agendar%20una%20llamada%20Adstone%20%F0%9F%98%83">Agenda</a></button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Comentarios -->
+    <div class="mainc" id="Comentarios">
+      <div class="mainc__container">
+        <div class="mainc__content">
+          <h2>Comentarios</h2>
+          <div class="google-form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdK8kS1K1IfV8e10CCCe3SRJ6TvYLIORXB8stqtBYEZ-68chA/viewform?embedded=true" width="100%" height="100%" frameborder="100%" marginheight="0" marginwidth="100%">Loading…</iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Terminos -->
+    <div class="main" id="Terminos">
+      <div class="main__container">
+        <div class="main__content">
+          <h2>Terminos de Servicio</h2>
+          <button class="services__btn" id="terminosbtn">Descargar</button>
+          <script>
+          document.getElementById("terminosbtn").addEventListener("click", function() {
+              // Crea un enlace temporal para descargar el PDF
+              var link = document.createElement('a');
+              link.href = "/Downloads/Terminos de Servicio - Adstone 19032024.pdf";
+              link.download = 'Terminos de Servicio - Adstone 19032024.pdf';
+              // Simula el clic en el enlace para iniciar la descarga
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+          });
+          </script>
+        </div>
+      </div>
+    </div>        
+
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Conocenos</h2>
+            <a href="#conocenos">Como funciona</a>
+            <a href="#Testimonios">Testimonios</a>
+            <a href="#Comentarios">Comentarios</a>
+            <a href="#Terminos">Terminos del Servicio</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Contactanos</h2>
+            <a href="https://wa.me/526275170605?text=¡Hola!%20Me%20interesa%20agendar%20una%20llamada%20Adstone%20%F0%9F%98%83">Contacto</a> 
+            <a href="/">Asistencia al cliente</a>
+            <a href="/">Destinos</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Wealthone</h2>
+            <a href="mailto:oscar@adstone.online">Conocenos</a> 
+            <a href="/">Servicios Personales</a>
+            <a href="/">Servicios Empresariales</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="https://www.instagram.com/adstone__/">Instagram</a> 
+            <a href="https://www.facebook.com/profile.php?id=61557388050924&mibextid=ZbWKwL">Facebook</a>
+            <a href="https://youtube.com/@Adstone.online?si=LsBuOdbDLD-WBOQ9">Youtube</a> 
+            <a href="/">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">Adstone</a>
+          </div>
+          <p class="website__rights">© Adstone 2024. All rights reserved</p>
+          <div class="social__icons">
+            <a href="/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+  </html>

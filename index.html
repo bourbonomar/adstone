@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADSTONE</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="imagenes/logos.png" type="image/x-icon" />
+  </head>
+  
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo"><h1>Adstone</h1></a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">Nosotros</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page"
+              >Servicios</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="https://wa.me/526275170605?text=¡Hola!%20Me%20interesa%20agendar%20una%20llamada%20Adstone%20%F0%9F%98%83" class="button" id="signup">Contactanos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading">Elige tus <span>colores</span></h1>
+        <p class="hero__description">La publicidad que tu negocio necesita</p>
+      </div>
+      <div class="mobile-only">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.85/build/spline-viewer.js"></script>
+        <spline-viewer loading-anim-type="spinner-small-dark" url="https://prod.spline.design/uMrR7fOSUCORhQq0/scene.splinecode"></spline-viewer>
+      </div>
+      <div class="desktop-only">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.85/build/spline-viewer.js"></script>
+        <spline-viewer loading-anim-type="spinner-small-dark" url="https://prod.spline.design/1YmbGg0Z76YKTSfV/scene.splinecode"></spline-viewer>
+      </div>
+    </div>
+
+    
+    
+  
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"><img src="/imagenes/Ecommerce.jpg"></img></div>
+        </div>
+        <div class="main__content">
+          <h1>¿Qué hacemos?</h1>
+          <h2>Ayudamos a tu negocio a llegar al siguiente nivel</h2>
+          <p>No te quedes atrás, crea presencia en Internet.</p>
+          <button class="main__btn"><a href="https://wa.me/526275170605?text=¡Hola!%20Me%20interesa%20agendar%20una%20llamada%20Adstone%20%F0%9F%98%83">Agenda</a></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+      <h1>Publicidad en Redes Sociales</h1>
+      <div class="services__wrapper">
+        <div class="services__card">
+          <h2>Simplex</h2>
+          <p>Tu primera puerta hacia la visibilidad en línea</p>
+        </div>
+        <div class="services__card">
+          <h2>Middle</h2>
+          <p>El equilibrio perfecto entre alcance y efectividad</p>
+        </div>
+        <div class="services__card">
+          <h2>Full</h2>
+          <p>Potencia tu presencia en la red con nuestra solución completa</p>
+        </div>
+        <div class="services__card">
+          <h2>Full Max</h2>
+          <p>El paquete definitivo para dominar el panorama digital</p>
+        </div>
+      </div>
+      <button class="services__btn" id="serv">+ Info</button>
+      <script>
+      document.getElementById("serv").addEventListener("click", function() {
+          // Crea un enlace temporal para descargar el PDF
+          var link = document.createElement('a');
+          link.href = "/Downloads/Adstone Products - March 2024.pdf";
+          link.download = 'Adstone Products - March 2024.pdf';
+          // Simula el clic en el enlace para iniciar la descarga
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+      });
+      </script>
+    </div>
+
+    
+    <!-- Features Section -->
+    <div class="main" id="sign-up">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Crea tu propio</h1>
+          <h2>Sito Web</h2>
+          <p>See what makes us different</p>
+          <button class="main__btn"><a href="https://wa.me/526275170605?text=¡Hola!%20Me%20interesa%20agendar%20una%20llamada%20Adstone%20%F0%9F%98%83">Agenda</a></button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <img src="/imagenes/WEB.jpg"></img>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Brand-->
+    <div class="main" id="sign-up">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Cuida tu</h1>
+          <h2>Marca</h2>
+          <p>Crea tu logo, registra tu marca y <br> tu patente</p>
+          <button class="main__btn"><a href="https://wa.me/526275170605?text=¡Hola!%20Me%20interesa%20agendar%20una%20llamada%20Adstone%20%F0%9F%98%83">Agenda</a></button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <img src="/imagenes/marca.jpg"></img>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Conocenos</h2>
+            <a href="/meet.html#conocenos">Como funciona</a> <a href="/meet.html#Testimonios">Testimonios</a>
+            <a href="/meet.html#Comentarios">Comentarios</a> <a href="/meet.html#Terminos">Terminos del Servicio</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Contactanos</h2>
+            <a href="/">Contacto</a> <a href="/">Asistencia al cliente</a>
+            <a href="/">Destinos</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Wealth Care</h2>
+            <a href="https://tome.app/oscar-fec/wealth-care-clk4hh2t105fzo33d3yyd51s6">Conocenos</a> 
+            <a href="https://tome.app/oscar-fec/wealth-care-clorsyryj029lmx7cocvfpvj9">Servicios Personales</a>
+            <a href="https://tome.app/oscar-fec/untitled-tome-clorswvvi02f8mz7b9kveqiel">Servicios Empresariales</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="https://www.instagram.com/adstone__/">Instagram</a> 
+            <a href="https://www.facebook.com/profile.php?id=61557388050924&mibextid=ZbWKwL">Facebook</a>
+            <a href="https://youtube.com/@Adstone.online?si=LsBuOdbDLD-WBOQ9">Youtube</a> 
+            <a href="/">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">Adstone</a>
+          </div>
+          <p class="website__rights">© Adstone 2024. All rights reserved</p>
+          <div class="social__icons">
+            <a href="https://www.instagram.com/adstone__/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.facebook.com/profile.php?id=61557388050924&mibextid=ZbWKwL" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://youtube.com/@Adstone.online?si=LsBuOdbDLD-WBOQ9" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
